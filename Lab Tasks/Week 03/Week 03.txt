@@ -1,0 +1,40 @@
+Part - A
+
+
+Activity 01
+
+SELECT Last_Name, Job_Id, Hire_Date AS Start_Date
+FROM emps
+WHERE Hire_Date BETWEEN '1998-02-20' AND '1998-03-01' ORDER BY Hire_Date;
+
+
+Activity 02
+
+SELECT Last_Name, Department_Id
+FROM emps
+WHERE Department_Id BETWEEN 20 AND 50 ORDER BY Last_Name;
+
+
+
+Part- B
+
+
+Activity 01
+
+SELECT Last_Name, Hire_Date
+From emps
+WHERE Hire_Date LIKE '%94';
+
+
+Activity 02
+
+SELECT Last_Name, Salary, Commission_pct
+FROM emps
+WHERE Commission_pct IS NOT NULL ORDER BY Salary, Commission_pct DESC;
+
+
+Activity 03
+
+SELECT Last_Name
+FROM emps
+WHERE Last_Name Like '%a%' AND Last_Name Like '%e%';
